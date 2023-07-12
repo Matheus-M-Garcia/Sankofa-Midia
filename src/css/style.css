@@ -1,0 +1,473 @@
+
+        /* Coloque aqui os estilos personalizados */
+
+        /* Estilos gerais */
+        html {
+            font-size: 62.5%;
+            background-color: var(--Cor-tema);
+        }
+
+        body {
+            font-size: 1.6rem;
+            font-family: 'Belanosima', sans-serif;
+            font-weight: 400;
+            display: grid;
+            grid-template-areas:
+                "header header header header"
+                "hero hero hero hero"
+                "about about about about"
+                "services services services services"
+                "founder founder founder founder"
+                "footer footer footer footer";
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        /* Estilos do cabeçalho */
+        .header {
+            grid-area: header;
+            background-color: var(--Cor-tema);
+        }
+
+        .header .conteiner-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            min-height: 75px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            transition: 0.3s;
+            font-family: 'belanosima';
+            color: #fff;
+        }
+
+        .header a:hover h1 {
+            color: var(--Cor-contraste);
+        }
+
+        /* Estilos do herói */
+        .hero {
+            grid-area: hero;
+            color: #fff;
+            text-align: center;
+            margin: 5rem;
+        }
+
+        .hero h2 {
+            font-size: 4rem;
+            margin: 2rem;
+            font-weight: 700;
+        }
+
+        .hero span {
+            color: var(--Cor-contraste);
+        }
+
+        .hero p {
+            font-size: 3rem;
+        }
+
+        button {
+            font-size: 3rem;
+            background-color: var(--Cor-contraste);
+            margin-top: 100px;
+            margin-bottom: 50px;
+            padding: 10px 20px;
+            border: 1px solid;
+            border-radius: 10px;
+            font-family: 'Roboto';
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        /* Estilos da seção "Sobre" */
+        .about {
+            grid-area: about;
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .about .sonho {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            max-width: 1600px;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        .about .sonho .mais {
+            width: 500px;
+            height: 350px;
+            background-color: var(--cor-conteudo);
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        .about .sonho .mais img {
+            margin-top: 30px;
+        }
+
+        .about .sonho .mais h2 {
+            font-weight: 700;
+            font-size: 3.5rem;
+            margin: 20px;
+            color: #fff;
+        }
+
+        .about .sonho .mais p {
+            font-size: 3rem;
+            font-weight: 400;
+            margin: 20px;
+            color: #fff;
+        }
+
+        .about .mecanismo-seck {
+            max-width: 1600px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        .about .mecanismo-seck p {
+            font-size: 3rem;
+            color: #fff;
+        }
+
+        .about .mecanismo-seck h2 {
+            font-size: 4rem;
+            color: #fff;
+            margin: 30px;
+            font-weight: 700;
+        }
+
+        .about .mecanismo-seck span {
+            color: var(--Cor-contraste);
+        }
+
+        /* Estilos da seção "Serviços" */
+        .services {
+            grid-area: services;
+            text-align: center;
+        }
+
+        .services .isca h2 {
+            font-size: 4rem;
+            color: #fff;
+            margin: 30px;
+            font-weight: 700;
+        }
+
+        .services span {
+            color: var(--Cor-contraste);
+        }
+
+        .services .isca .dores {
+            color: #fff;
+            font-size: 3.5rem;
+            width: 1000px;
+            height: 300px;
+            background-color: var(--cor-conteudo);
+            margin: 0 auto;
+            list-style-image: url(../imagens/icons8-selecionado-25.png);
+            text-align: start;
+            border-radius: 20px;
+            padding: 45px;
+        }
+
+        .services .isca p {
+            font-size: 3rem;
+            color: #fff;
+            margin: 30px;
+        }
+
+        .services .cura .beneficios-content {
+            display: flex;
+            padding: 20px 40px;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 75px;
+        }
+
+        .services .cura h2 {
+            font-size: 4rem;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .services .cura .beneficios-content .beneficios {
+            width: 420px;
+            height: 330px;
+            background-color: var(--cor-conteudo);
+            border-radius: 0px 30px 0px 30px;
+            margin-top: 20px;
+            border: solid #fff;
+        }
+
+        .services .cura .beneficios-content .beneficios h2 {
+            font-weight: 700;
+        }
+
+        .services .cura span {
+            color: var(--Cor-contraste);
+            font-weight: 700;
+        }
+
+        .services .cura .beneficios-content .beneficios img {
+            margin: 20px;
+        }
+
+        .services .cura .beneficios-content .beneficios p {
+            font-size: 2.5rem;
+            margin: 20px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .services .cura .resultado {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .services .cura .resultado p {
+            color: #fff;
+            font-weight: 700;
+            font-size: 3rem;
+            width: 400px;
+            margin: 30px;
+        }
+
+        /* Estilos da seção "Founder" */
+        .founder {
+            grid-area: founder;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .founder h2 {
+            font-size: 4rem;
+            font-weight: 700;
+            text-align: center;
+            color: #fff;
+        }
+
+        .founder .conteiner-fundador {
+            display: flex;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .founder .conteiner-fundador p {
+            color: #e0e0e0;
+            text-align: start;
+            font-size: 3.8rem;
+            font-weight: 400;
+            width: 1000px;
+            height: 980px;
+            background-color: var(--cor-conteudo);
+            margin-top: 50px;
+            padding: 50px;
+            border-radius: 0px 100px 0px 100px;
+            border: solid;
+        }
+
+        /* Estilos do rodapé */
+        .footer {
+            grid-area: footer;
+            text-align: start;
+        }
+
+        .footer h2 {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 50px 100px;
+        }
+
+        .footer .faq-container {
+            max-width: 600px;
+            margin-left: 100px;
+        }
+
+        .question {
+            font-weight: 400;
+            font-size: 3rem;
+            color: #fff;
+            cursor: pointer;
+            margin: 5px;
+            background-color: var(--cor-conteudo);
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        .answer {
+            display: none;
+            font-weight: 400;
+            font-size: 3rem;
+            color: #fff;
+            background-color: var() ;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .question:focus+.answer {
+            display: block;
+        }
+
+        .footer .direitos {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            background-color: #424242;
+            padding: 15px;
+        }
+
+        /* Estilos específicos para dispositivos menores ou iguais a 420px */
+        @media (max-width: 420px) {
+            body {
+                font-size: 1.4rem;
+            }
+
+            .header h1 {
+                font-size: 2.4rem;
+            }
+
+            .hero h2 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 2.4rem;
+            }
+
+            button {
+                font-size: 2.4rem;
+                margin-top: 80px;
+                margin-bottom: 40px;
+                padding: 8px 16px;
+            }
+
+            .about .sonho {
+                flex-direction: column;
+                align-items: center;
+                margin-left: 0;
+            }
+
+            .about .sonho .mais {
+                width: 100%;
+                height: auto;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+
+            .about .sonho .mais h2 {
+                font-size: 2.8rem;
+                margin: 10px;
+            }
+
+            .about .sonho .mais p {
+                font-size: 2rem;
+                margin: 10px;
+            }
+
+            .about .mecanismo-seck {
+                margin-left: 0;
+                margin-top: 80px;
+            }
+
+            .about .mecanismo-seck p {
+                font-size: 2.4rem;
+            }
+
+            .about .mecanismo-seck h2 {
+                font-size: 3rem;
+                margin: 20px;
+            }
+
+            .services .isca .dores {
+                font-size: 2.4rem;
+                width: 90%;
+                margin-left: 5%;
+                padding: 30px;
+            }
+
+            .services .isca p {
+                font-size: 2.4rem;
+                margin: 20px;
+            }
+
+            .services .cura .beneficios-content {
+                flex-wrap: wrap;
+            }
+
+            .services .cura .beneficios-content .beneficios {
+                width: 100%;
+                height: auto;
+                margin-top: 40px;
+            }
+
+            .services .cura .beneficios-content .beneficios h2 {
+                font-size: 2.8rem;
+            }
+
+            .services .cura .beneficios-content .beneficios p {
+                font-size: 2.2rem;
+                margin: 10px;
+            }
+            .services .cura .resultado{
+                display: block;
+            }
+            .services .cura .resultado p {
+                font-size: 2.4rem;
+                width: 300px;
+                margin: 20px 40px;
+                
+            }
+
+            .founder h2 {
+                font-size: 3.2rem;
+                margin: 40px;
+            }
+
+            .founder .conteiner-fundador {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .founder .conteiner-fundador p {
+                font-size: 2.8rem;
+                width: 90%;
+                height: auto;
+                margin-top: 40px;
+                padding: 30px;
+                border-radius: 0px 30px 0px 30px;
+            }
+
+            .footer h2 {
+                font-size: 3.2rem;
+                margin: 40px 80px;
+            }
+
+            .footer .faq-container {
+                margin-left: 80px;
+            }
+
+            .question {
+                font-size: 2.4rem;
+                margin: 3px;
+            }
+
+            .answer {
+                font-size: 2.4rem;
+            }
+        }
+ 
+
